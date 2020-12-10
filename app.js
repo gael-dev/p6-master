@@ -9,6 +9,8 @@ const rateLimit = require ('express-rate-limit');
 const sauceRoutes = require('./routes/sauces');
 const userRoutes = require('./routes/user');
 
+require ("dotenv").config()
+
 mongoose.connect('mongodb+srv://kazey:Lothar1107@cluster0.4nt78.gcp.mongodb.net/<dbname>?retryWrites=true&w=majority',
   { useNewUrlParser: true,
     useUnifiedTopology: true })
